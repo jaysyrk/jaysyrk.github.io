@@ -488,54 +488,6 @@
       .hero-stats { gap: 1.5rem; }
     }
 
-    /* ── COLLAPSIBLE PROJECT DETAILS ── */
-    .project-desc,
-    .feature-list,
-    .tags {
-      max-height: 0;
-      overflow: hidden;
-      opacity: 0;
-      margin-bottom: 0 !important;
-      transition: max-height 0.4s ease, opacity 0.3s ease, margin-bottom 0.4s ease;
-    }
-
-    .project-card:hover .project-desc {
-      max-height: 160px;
-      opacity: 1;
-      margin-bottom: 1.25rem !important;
-    }
-
-    .project-card:hover .feature-list {
-      max-height: 200px;
-      opacity: 1;
-      margin-bottom: 1.25rem !important;
-    }
-
-    .project-card:hover .tags {
-      max-height: 80px;
-      opacity: 1;
-    }
-
-    .project-card::after {
-      content: '▾ hover to expand';
-      display: block;
-      font-size: 0.7rem;
-      font-family: 'Fira Code', monospace;
-      color: var(--muted);
-      opacity: 0.5;
-      text-align: center;
-      margin-top: 0.75rem;
-      transition: opacity 0.2s, max-height 0.3s;
-      max-height: 30px;
-      overflow: hidden;
-    }
-
-    .project-card:hover::after {
-      opacity: 0;
-      max-height: 0;
-      margin-top: 0;
-    }
-
     /* ── SCROLLBAR ── */
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: var(--bg); }
