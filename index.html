@@ -488,6 +488,54 @@
       .hero-stats { gap: 1.5rem; }
     }
 
+    /* ── COLLAPSIBLE PROJECT DETAILS ── */
+    .project-desc,
+    .feature-list,
+    .tags {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      margin-bottom: 0 !important;
+      transition: max-height 0.4s ease, opacity 0.3s ease, margin-bottom 0.4s ease;
+    }
+
+    .project-card:hover .project-desc {
+      max-height: 160px;
+      opacity: 1;
+      margin-bottom: 1.25rem !important;
+    }
+
+    .project-card:hover .feature-list {
+      max-height: 200px;
+      opacity: 1;
+      margin-bottom: 1.25rem !important;
+    }
+
+    .project-card:hover .tags {
+      max-height: 80px;
+      opacity: 1;
+    }
+
+    .project-card::after {
+      content: '▾ hover to expand';
+      display: block;
+      font-size: 0.7rem;
+      font-family: 'Fira Code', monospace;
+      color: var(--muted);
+      opacity: 0.5;
+      text-align: center;
+      margin-top: 0.75rem;
+      transition: opacity 0.2s, max-height 0.3s;
+      max-height: 30px;
+      overflow: hidden;
+    }
+
+    .project-card:hover::after {
+      opacity: 0;
+      max-height: 0;
+      margin-top: 0;
+    }
+
     /* ── SCROLLBAR ── */
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: var(--bg); }
@@ -511,13 +559,14 @@
   <!-- HERO -->
   <section class="hero" id="home">
     <div class="hero-inner">
-      <div class="hero-badge">Targeting MIS / CIS for college &mdash; Class of 2028</div>
-      <h1>Jacob McCord<br /><span class="highlight">Developer &amp; Builder</span></h1>
+      <div class="hero-badge">Aspiring Project Manager &mdash; Class of 2028</div>
+      <h1>Jacob McCord<br /><span class="highlight">Ideas, Logic &amp; Systems</span></h1>
       <p class="hero-subtitle">High School Sophomore &mdash; Class of 2028</p>
       <p class="hero-desc">
-        High school sophomore who builds things — games, tools, business systems, whatever
-        seems worth making. The projects here lean toward business &amp; information systems,
-        which is where I'm heading for college.
+        I love taking an idea from a blank page to something real. Whether it&rsquo;s mapping
+        out a system, breaking a problem into pieces, or actually building the thing &mdash;
+        that process is what drives me. I&rsquo;m aiming for a career in project management
+        where logic, structure, and execution all come together.
       </p>
       <div class="hero-cta">
         <a class="btn btn-primary" href="#projects">
@@ -531,7 +580,7 @@
       </div>
       <div class="hero-stats">
         <div class="stat-item">
-          <span class="stat-num">4</span>
+          <span class="stat-num">5</span>
           <span class="stat-label">Projects Built</span>
         </div>
         <div class="stat-item">
@@ -543,7 +592,7 @@
           <span class="stat-label">Graduation Year</span>
         </div>
         <div class="stat-item">
-          <span class="stat-num">MIS</span>
+          <span class="stat-num">PM</span>
           <span class="stat-label">Focus Area</span>
         </div>
       </div>
@@ -556,7 +605,7 @@
       <div class="section-header">
         <span class="section-tag">// my work</span>
         <h2 class="section-title">Projects</h2>
-        <p class="section-desc">These projects focus on business &amp; information systems — my target area for college.</p>
+        <p class="section-desc">Each of these started as an idea. Here&rsquo;s what happened when I actually built them.</p>
       </div>
 
       <div class="projects-grid">
@@ -654,6 +703,38 @@
           </div>
         </div>
 
+        <!-- Teleos -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-title-wrap">
+              <div class="project-icon" style="background:#1a2a1a;">⚙️</div>
+              <span class="project-title">py-teleos</span>
+            </div>
+            <a class="project-link" href="https://github.com/jaysyrk/teleos" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              View Source
+            </a>
+          </div>
+          <p class="project-desc">
+            A plain-language logic and rules engine with a Rust core. Write business rules in
+            plain English, query them with <code style="font-family:'Fira Code',monospace;font-size:0.82rem;color:var(--accent)">ask()</code>, and get a full reasoning trace with <code style="font-family:'Fira Code',monospace;font-size:0.82rem;color:var(--accent)">why()</code>.
+            Published on PyPI with bindings for 6 languages.
+          </p>
+          <ul class="feature-list">
+            <li>Plain-English rule syntax — no special DSL to learn</li>
+            <li>Forward-chaining inference engine written in Rust</li>
+            <li>why() returns the full reasoning chain for auditability</li>
+            <li>Bindings for Python, JS/WASM, Go, Java, C#, and C++</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Rust</span>
+            <span class="tag">Python</span>
+            <span class="tag">WebAssembly</span>
+            <span class="tag">FFI</span>
+            <span class="tag">PyPI</span>
+          </div>
+        </div>
+
         <!-- Business Analytics -->
         <div class="project-card">
           <div class="project-card-header">
@@ -693,15 +774,16 @@
   <section id="skills">
     <div class="section-inner">
       <div class="section-header">
-        <span class="section-tag">// technical skills</span>
+        <span class="section-tag">// skills &amp; thinking</span>
         <h2 class="section-title">Skills &amp; Tools</h2>
-        <p class="section-desc">Technologies and concepts applied across my projects.</p>
+        <p class="section-desc">The technical and planning skills behind every project.</p>
       </div>
       <div class="skills-grid">
         <div class="skill-category">
           <h4>Languages</h4>
           <ul class="skill-list">
             <li>Python</li>
+            <li>Rust</li>
             <li>TypeScript</li>
             <li>JavaScript</li>
             <li>SQL</li>
@@ -737,6 +819,16 @@
             <li>Command Line</li>
           </ul>
         </div>
+        <div class="skill-category">
+          <h4>Planning</h4>
+          <ul class="skill-list">
+            <li>Requirements Scoping</li>
+            <li>Systems Design</li>
+            <li>Process Mapping</li>
+            <li>Problem Decomposition</li>
+            <li>Documentation</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -751,19 +843,19 @@
       <div class="about-grid">
         <div class="about-text">
           <p>
-            I'm <strong>Jacob McCord</strong>, a high school sophomore who codes across a wide range
-            of areas — from games and personal tools to full business systems. If it's interesting
-            to build, I'll build it.
+            I&rsquo;m <strong>Jacob McCord</strong>, and the thing I genuinely love is the process
+            of turning an idea into something that works. I like sitting down with a blank page,
+            figuring out how all the pieces connect, and then executing until it&rsquo;s real.
           </p>
           <p>
-            The projects featured here represent my <strong>business and information systems</strong>
-            work — order tracking, budgeting, helpdesk, and analytics — but they're just one side of
-            what I do. I'm always picking up new things and building outside of any one category.
+            The technical side — writing code, designing databases, shipping tools — is how I
+            make ideas concrete. But what pulls me in is the <strong>thinking behind the build</strong>:
+            scoping problems, designing systems, breaking big goals into steps that actually ship.
           </p>
           <p>
-            For college, my focus is <strong>MIS or CIS</strong>. I'm drawn to how technology
-            integrates with business operations, and I want to work in a role that sits at that
-            intersection — systems analysis, business intelligence, or enterprise development.
+            I&rsquo;m aiming for a career in <strong>project management</strong>. I want to be the
+            person who takes something from &ldquo;wouldn&rsquo;t it be cool if&rdquo; to done &mdash;
+            leading the logic, the plan, and the people to get there.
           </p>
         </div>
         <div class="about-info">
@@ -777,7 +869,7 @@
           </div>
           <div class="info-card">
             <div class="info-card-label">Focus</div>
-            <div class="info-card-value">MIS / CIS — Business Systems</div>
+            <div class="info-card-value">Project Management / MIS</div>
           </div>
           <div class="info-card">
             <div class="info-card-label">GitHub</div>
@@ -806,8 +898,8 @@
           <span class="section-tag">// get in touch</span>
           <h2>Interested in my work?</h2>
           <p>
-            I'm open to internship opportunities, mentorship, or just connecting with
-            people in MIS/CIS. Reach out via email for anything professional.
+            I&rsquo;m open to internship opportunities, mentorship, or just connecting with
+            people in project management or tech. Reach out via email for anything professional.
           </p>
         </div>
         <div class="contact-links">
