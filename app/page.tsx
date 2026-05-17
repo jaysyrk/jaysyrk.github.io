@@ -90,6 +90,7 @@ export default function Home() {
         <div className="flex gap-6 text-sm text-slate-500">
           <a href="#projects" className="hover:text-purple-600 transition-colors">Projects</a>
           <a href="#skills" className="hover:text-purple-600 transition-colors">Skills</a>
+          <a href="#contact" className="hover:text-purple-600 transition-colors">Contact</a>
           <a
             href="https://github.com/jaysyrk"
             target="_blank"
@@ -198,6 +199,18 @@ export default function Home() {
             </div>
           ))}
         </div>
+      </section>
+
+      {/* Contact */}
+      <section id="contact" className="max-w-5xl mx-auto px-6 pb-24">
+        <h2 className="text-2xl font-bold mb-2 text-slate-900">Contact</h2>
+        <p className="text-slate-500 text-sm mb-8">Feel free to reach out — always open to new opportunities and conversations.</p>
+        <a
+          href="mailto:jmccord.dev@gmail.com"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-white border border-purple-200 hover:border-purple-400 hover:bg-purple-50 rounded-xl text-purple-600 font-medium transition-colors shadow-sm"
+        >
+          jmccord.dev@gmail.com
+        </a>
       </section>
 
       {/* Footer */}
