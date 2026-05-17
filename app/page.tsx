@@ -83,19 +83,19 @@ const skills = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-purple-50 text-slate-800 font-sans">
+    <main className="min-h-screen bg-[#E6E6FA] text-slate-800 font-sans">
       {/* Nav */}
-      <nav className="border-b border-purple-200 bg-white/70 backdrop-blur-sm px-6 py-4 flex items-center justify-between max-w-5xl mx-auto">
-        <span className="font-mono text-purple-600 font-semibold tracking-tight text-lg">jaysyrk</span>
+      <nav className="border-b border-[#D8BFD8] bg-white/80 backdrop-blur-sm px-6 py-4 flex items-center justify-between max-w-5xl mx-auto">
+        <span className="font-mono text-[#8b6b8b] font-semibold tracking-tight text-lg">jaysyrk</span>
         <div className="flex gap-6 text-sm text-slate-500">
-          <a href="#projects" className="hover:text-purple-600 transition-colors">Projects</a>
-          <a href="#skills" className="hover:text-purple-600 transition-colors">Skills</a>
-          <a href="#contact" className="hover:text-purple-600 transition-colors">Contact</a>
+          <a href="#projects" className="hover:text-[#8b6b8b] transition-colors">Projects</a>
+          <a href="#skills" className="hover:text-[#8b6b8b] transition-colors">Skills</a>
+          <a href="#contact" className="hover:text-[#8b6b8b] transition-colors">Contact</a>
           <a
             href="https://github.com/jaysyrk"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-purple-600 transition-colors"
+            className="hover:text-[#8b6b8b] transition-colors"
           >
             GitHub
           </a>
@@ -104,18 +104,18 @@ export default function Home() {
 
       {/* Hero */}
       <section className="max-w-5xl mx-auto px-6 py-24">
-        <p className="text-purple-500 font-mono text-sm mb-4">Hi, I&apos;m</p>
+        <p className="text-[#8b6b8b] font-mono text-sm mb-4">Hi, I&apos;m</p>
         <h1 className="text-5xl font-bold tracking-tight mb-4 text-slate-900">Jacob McCord</h1>
         <p className="text-xl text-slate-500 max-w-2xl leading-relaxed">
           16-year-old software engineer pursuing{" "}
-          <span className="text-purple-700 font-medium">technical product management</span> and{" "}
-          <span className="text-purple-700 font-medium">systems architecture</span>. I build full-stack tools,
+          <span className="text-[#8b6b8b] font-medium">technical product management</span> and{" "}
+          <span className="text-[#8b6b8b] font-medium">systems architecture</span>. I build full-stack tools,
           infrastructure pipelines, and developer-focused products.
         </p>
         <div className="flex gap-4 mt-8">
           <a
             href="#projects"
-            className="px-5 py-2.5 bg-purple-600 hover:bg-purple-500 text-white rounded-lg text-sm font-medium transition-colors"
+            className="px-5 py-2.5 bg-[#D8BFD8] hover:bg-[#caaeca] text-slate-800 rounded-lg text-sm font-medium transition-colors"
           >
             View Projects
           </a>
@@ -123,7 +123,7 @@ export default function Home() {
             href="https://github.com/jaysyrk"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-5 py-2.5 border border-purple-300 hover:border-purple-400 hover:bg-purple-100 rounded-lg text-sm font-medium transition-colors text-slate-600"
+            className="px-5 py-2.5 border border-[#D8BFD8] hover:border-[#caaeca] hover:bg-white rounded-lg text-sm font-medium transition-colors text-slate-600"
           >
             GitHub Profile
           </a>
@@ -144,23 +144,23 @@ export default function Home() {
               href={project.href}
               target="_blank"
               rel="noopener noreferrer"
-              className={`group block rounded-xl border p-6 transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-purple-200 ${
+              className={`group block rounded-xl border p-6 transition-all hover:-translate-y-0.5 hover:shadow-lg ${
                 project.highlight
-                  ? "border-purple-300 bg-white hover:border-purple-400 shadow-sm"
-                  : "border-purple-100 bg-white hover:border-purple-300"
+                  ? "border-[#FFDAB9] bg-white hover:border-[#f0c49a] shadow-sm hover:shadow-[#FFDAB9]/60"
+                  : "border-[#D8BFD8] bg-white hover:border-[#caaeca] hover:shadow-[#D8BFD8]/60"
               }`}
             >
               <div className="flex items-start justify-between mb-3">
                 <div>
-                  <span className="font-mono text-xs text-purple-400 uppercase tracking-wider">
+                  <span className="font-mono text-xs text-[#C3C1CD] uppercase tracking-wider">
                     {project.tagline}
                   </span>
-                  <h3 className="text-lg font-semibold mt-0.5 text-slate-800 group-hover:text-purple-600 transition-colors">
+                  <h3 className="text-lg font-semibold mt-0.5 text-slate-800 group-hover:text-[#8b6b8b] transition-colors">
                     {project.name}
                   </h3>
                 </div>
                 {project.highlight && (
-                  <span className="text-xs bg-purple-100 text-purple-600 border border-purple-200 rounded-full px-2.5 py-1 font-medium shrink-0 ml-3">
+                  <span className="text-xs bg-[#FFDAB9] text-slate-700 border border-[#f0c49a] rounded-full px-2.5 py-1 font-medium shrink-0 ml-3">
                     Featured
                   </span>
                 )}
@@ -168,7 +168,7 @@ export default function Home() {
               <p className="text-slate-500 text-sm leading-relaxed mb-4">{project.description}</p>
               <div className="flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
-                  <span key={tag} className="text-xs bg-purple-50 text-purple-600 border border-purple-100 rounded-md px-2.5 py-1">
+                  <span key={tag} className="text-xs bg-[#C8D8C4] text-slate-600 border border-[#b8c8b4] rounded-md px-2.5 py-1">
                     {tag}
                   </span>
                 ))}
@@ -185,8 +185,8 @@ export default function Home() {
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {skills.map(({ category, items }) => (
-            <div key={category} className="bg-white border border-purple-100 rounded-xl p-4">
-              <h3 className="text-xs font-semibold text-purple-500 uppercase tracking-wider mb-3">
+            <div key={category} className="bg-white border border-[#C8D8C4] rounded-xl p-4">
+              <h3 className="text-xs font-semibold text-[#8b6b8b] uppercase tracking-wider mb-3">
                 {category}
               </h3>
               <ul className="space-y-1.5">
@@ -207,21 +207,21 @@ export default function Home() {
         <p className="text-slate-500 text-sm mb-8">Feel free to reach out — always open to new opportunities and conversations.</p>
         <a
           href="mailto:jmccord.dev@gmail.com"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-white border border-purple-200 hover:border-purple-400 hover:bg-purple-50 rounded-xl text-purple-600 font-medium transition-colors shadow-sm"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-white border border-[#D8BFD8] hover:border-[#caaeca] hover:bg-[#E6E6FA] rounded-xl text-[#8b6b8b] font-medium transition-colors shadow-sm"
         >
           jmccord.dev@gmail.com
         </a>
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-purple-200 px-6 py-8 text-center text-sm text-slate-400 max-w-5xl mx-auto">
+      <footer className="border-t border-[#D8BFD8] px-6 py-8 text-center text-sm text-slate-400 max-w-5xl mx-auto">
         <p>
           Built by{" "}
           <a
             href="https://github.com/jaysyrk"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-purple-500 hover:underline"
+            className="text-[#8b6b8b] hover:underline"
           >
             jaysyrk
           </a>{" "}
