@@ -1,5 +1,14 @@
 const projects = [
   {
+    name: "ChronosIaC",
+    tagline: "Infrastructure Drift Detection & Postmortem Platform",
+    description:
+      "Full-stack platform that detects configuration drift between IaC baselines and live infrastructure, then auto-generates incident postmortems with correlated drift timelines. Includes scheduled polling, Slack/email alerts, and a live dashboard.",
+    tags: ["Next.js", "Express", "PostgreSQL", "TypeScript", "DevOps"],
+    href: "https://github.com/jaysyrk/ChronosIac",
+    highlight: true,
+  },
+  {
     name: "teleos",
     tagline: "Rule Engine DSL",
     description:
@@ -76,7 +85,7 @@ const projects = [
 const skills = [
   { category: "Languages", items: ["Python", "TypeScript", "JavaScript", "SQL"] },
   { category: "Frontend", items: ["Next.js", "React", "Tailwind CSS", "Recharts"] },
-  { category: "Backend", items: ["FastAPI", "Flask", "SQLAlchemy", "REST APIs"] },
+  { category: "Backend", items: ["FastAPI", "Flask", "Express", "SQLAlchemy", "REST APIs"] },
   { category: "Infra / DevOps", items: ["Docker", "GitHub Actions", "CI/CD", "SQLite"] },
   { category: "Product", items: ["Roadmapping", "Feature Flags", "Changelogs", "ITSM"] },
 ];
