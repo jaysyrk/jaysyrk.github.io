@@ -3,7 +3,7 @@ const projects = [
     name: "ChronosIaC",
     tagline: "Infrastructure Drift Detection & Postmortem Platform",
     description:
-      "Full-stack platform that detects configuration drift between IaC baselines and live infrastructure, then auto-generates incident postmortems with correlated drift timelines. Includes scheduled polling, Slack/email alerts, and a live dashboard.",
+      "Drift detection and postmortem platform for IaC. Compares live state to baselines using scheduled polling and event-driven alerts. Focuses on actionable insights and automated postmortems, trading real-time checks for scalable, periodic analysis.",
     tags: ["Next.js", "Express", "PostgreSQL", "TypeScript", "DevOps"],
     href: "https://github.com/jaysyrk/ChronosIac",
     highlight: true,
@@ -12,7 +12,7 @@ const projects = [
     name: "teleos",
     tagline: "Rule Engine DSL",
     description:
-      "A domain-specific language for writing business logic as human-readable rules. Compile once, run anywhere — cross-language rule execution engine.",
+      "Logic engine and DSL that parses business rules into an AST for efficient, modular evaluation. Uses backward chaining for query resolution. Designed for readable syntax and easy integration, balancing user-friendly rules with reliable parsing.",
     tags: ["DSL", "Compiler", "Python", "Architecture"],
     href: "https://github.com/jaysyrk/teleos",
     highlight: true,
@@ -21,7 +21,7 @@ const projects = [
     name: "roadmap-flagmanager",
     tagline: "Product Roadmap & Feature Flag Manager",
     description:
-      "Full-stack TPM tool to manage epics, features, tasks, and feature flags with live environment toggles and an AI-style changelog generator.",
+      "Roadmap and feature flag manager with live toggles and AI changelogs. Prioritizes real-time control and auditability, balancing flexibility for product teams with safe deployment workflows.",
     tags: ["Next.js", "FastAPI", "SQLite", "TypeScript"],
     href: "https://github.com/jaysyrk/roadmap-flagmanager",
     highlight: true,
@@ -30,7 +30,7 @@ const projects = [
     name: "Syrk-lytical",
     tagline: "Client-Side Analytics Platform",
     description:
-      "Privacy-first analytics dashboard built entirely in the browser. Real-time event tracking, funnel visualizations, and retention charts — no server required.",
+      "Privacy-first analytics dashboard with real-time event tracking and funnel visualizations, all in-browser. Trades server-side complexity for instant feedback and user data privacy.",
     tags: ["Next.js", "TypeScript", "Recharts", "Analytics"],
     href: "https://github.com/jaysyrk/Syrk-lytical",
     highlight: false,
@@ -39,7 +39,7 @@ const projects = [
     name: "ci-cd-pipeline",
     tagline: "Automated CI/CD Pipeline",
     description:
-      "End-to-end CI/CD pipeline with containerized builds, automated testing, and zero-downtime deployments using GitHub Actions and Docker.",
+      "CI/CD pipeline with containerized builds, automated tests, and zero-downtime deploys. Focuses on reliability and fast feedback, balancing automation with manual approval gates.",
     tags: ["Python", "Docker", "GitHub Actions", "DevOps"],
     href: "https://github.com/jaysyrk/ci-cd-pipeline",
     highlight: false,
@@ -48,7 +48,7 @@ const projects = [
     name: "system-health-dashboard",
     tagline: "System Health Monitoring Dashboard",
     description:
-      "Real-time server monitoring dashboard tracking CPU, memory, disk, and process health. Built with Flask and psutil, served over a live WebSocket feed.",
+      "Live server monitoring dashboard for CPU, memory, and process health. Uses WebSockets for real-time updates, trading persistent storage for instant visibility.",
     tags: ["Python", "Flask", "psutil", "Monitoring"],
     href: "https://github.com/jaysyrk/system-health-dashboard",
     highlight: false,
@@ -57,7 +57,7 @@ const projects = [
     name: "ordertrack-pro",
     tagline: "Order & Invoice Management System",
     description:
-      "ERP-style order tracking system with customer management, inventory, PDF invoice generation, and revenue charts.",
+      "Order and invoice system with inventory, customer management, and PDF generation. Balances ERP features with a simple, focused UI for small businesses.",
     tags: ["Python", "Flask", "Chart.js", "PDF"],
     href: "https://github.com/jaysyrk/ordertrack-pro",
     highlight: false,
@@ -66,7 +66,7 @@ const projects = [
     name: "helpdesk",
     tagline: "IT Help Desk & Asset Manager",
     description:
-      "ITSM platform for managing tickets, SLAs, and IT asset inventory. Includes role-based access control and escalation workflows.",
+      "ITSM platform for tickets, SLAs, and asset inventory. Emphasizes RBAC and escalation, trading feature breadth for reliability and clear workflows.",
     tags: ["Python", "Flask", "ITSM", "RBAC"],
     href: "https://github.com/jaysyrk/helpdesk",
     highlight: false,
@@ -75,7 +75,7 @@ const projects = [
     name: "budget-tracker",
     tagline: "Personal Finance & Budget Tracker",
     description:
-      "Financial health dashboard with income/expense tracking, category breakdowns, spending trends, and an automated financial health score.",
+      "Finance dashboard for income, expenses, and trends. Focuses on clarity and automation, trading advanced analytics for a simple, actionable overview.",
     tags: ["Python", "Flask", "Finance", "Data Viz"],
     href: "https://github.com/jaysyrk/budget-tracker",
     highlight: false,
