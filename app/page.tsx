@@ -1,5 +1,14 @@
 const projects = [
   {
+    name: "VektorStream",
+    tagline: "High-Throughput Edge Vectorizer",
+    description:
+      "High-throughput user event vectorizer with zero-allocation ring buffers, an embedded BadgerDB persistence layer, and a real-time time-decay rules engine. Includes a sleek React/Vite dashboard to visualize 3D user states dynamically.",
+    tags: ["Go", "React", "BadgerDB", "Vite"],
+    href: "https://github.com/jaysyrk/VektorStream",
+    highlight: true,
+  },
+  {
     name: "ChronosIaC",
     tagline: "Infrastructure Drift Detection & Postmortem Platform",
     description:
@@ -83,9 +92,9 @@ const projects = [
 ];
 
 const skills = [
-  { category: "Languages", items: ["Python", "TypeScript", "JavaScript", "SQL"] },
+  { category: "Languages", items: ["Go", "Python", "TypeScript", "JavaScript", "SQL"] },
   { category: "Frontend", items: ["Next.js", "React", "Tailwind CSS", "Recharts"] },
-  { category: "Backend", items: ["FastAPI", "Flask", "Express", "SQLAlchemy", "REST APIs"] },
+  { category: "Backend", items: ["Go", "FastAPI", "Flask", "BadgerDB", "PostgreSQL"] },
   { category: "Infra / DevOps", items: ["Docker", "GitHub Actions", "CI/CD", "SQLite"] },
   { category: "Product", items: ["Roadmapping", "Feature Flags", "Changelogs", "ITSM"] },
 ];
