@@ -36,6 +36,15 @@ const projects = [
     highlight: true,
   },
   {
+    name: "SelfSynthEngine",
+    tagline: "Self-Writing File Optimization Engine",
+    description:
+      "Intelligent, automatic file processing and optimization engine. Dynamically writes its own Python code to handle unknown files, predicts optimization time with built-in ML, and self-heals on failure. Features parallel processing, cryptographic signing, and zero external dependencies.",
+    tags: ["Python", "Machine Learning", "Parallelism", "Security"],
+    href: "https://github.com/jaysyrk/SelfSynthEngine",
+    highlight: true,
+  },
+  {
     name: "Syrk-lytical",
     tagline: "Client-Side Analytics Platform",
     description:
@@ -125,10 +134,7 @@ export default function Home() {
         <p className="text-[#8b6b8b] font-mono text-sm mb-4">Hi, I&apos;m</p>
         <h1 className="text-5xl font-bold tracking-tight mb-4 text-slate-900">Jacob McCord</h1>
         <p className="text-xl text-slate-500 max-w-2xl leading-relaxed">
-          16-year-old software engineer pursuing{" "}
-          <span className="text-[#8b6b8b] font-medium">technical product management</span> and{" "}
-          <span className="text-[#8b6b8b] font-medium">systems architecture</span>. I build full-stack tools,
-          infrastructure pipelines, and developer-focused products.
+          16-year-old software engineer specializing in <span className="text-[#8b6b8b] font-medium">technical product management</span> and <span className="text-[#8b6b8b] font-medium">systems architecture</span>. Building at the intersection of full-stack tools, infrastructure pipelines, and developer-focused products.
         </p>
         <div className="flex gap-4 mt-8">
           <a
