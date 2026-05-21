@@ -158,7 +158,7 @@ export default function Home() {
       <section id="projects" className="max-w-5xl mx-auto px-6 pb-24">
         <h2 className="text-2xl font-bold mb-2 text-slate-900">Projects</h2>
         <p className="text-slate-500 text-sm mb-10">
-          8 projects spanning full-stack development, DevOps, and product tooling.
+          Projects spanning full-stack development, DevOps, and product tooling.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
