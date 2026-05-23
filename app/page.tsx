@@ -101,7 +101,7 @@ const projects = [
 ];
 
 const skills = [
-  { category: "Languages", items: ["Go", "Python", "TypeScript", "JavaScript", "SQL"] },
+  { category: "Languages", items: ["Python", "Rust", "Go", "C", "SQL"] },
   { category: "Frontend", items: ["Next.js", "React", "Tailwind CSS", "Recharts"] },
   { category: "Backend", items: ["Go", "FastAPI", "Flask", "BadgerDB", "PostgreSQL"] },
   { category: "Infra / DevOps", items: ["Docker", "GitHub Actions", "CI/CD", "SQLite"] },
