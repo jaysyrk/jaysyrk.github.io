@@ -36,15 +36,6 @@ const projects = [
     highlight: true,
   },
   {
-    name: "roadmap-flagmanager",
-    tagline: "Product Roadmap & Feature Flag Manager",
-    description:
-      "Roadmap and feature flag manager with live toggles and AI changelogs. Prioritizes real-time control and auditability, balancing flexibility for product teams with safe deployment workflows.",
-    tags: ["Next.js", "FastAPI", "SQLite", "TypeScript"],
-    href: "https://github.com/jaysyrk/roadmap-flagmanager",
-    highlight: true,
-  },
-  {
     name: "SelfSynthEngine",
     tagline: "Self-Writing File Optimization Engine",
     description:
@@ -53,68 +44,14 @@ const projects = [
     href: "https://github.com/jaysyrk/SelfSynthEngine",
     highlight: true,
   },
-  {
-    name: "Syrk-lytical",
-    tagline: "Client-Side Analytics Platform",
-    description:
-      "Privacy-first analytics dashboard with real-time event tracking and funnel visualizations, all in-browser. Trades server-side complexity for instant feedback and user data privacy.",
-    tags: ["Next.js", "TypeScript", "Recharts", "Analytics"],
-    href: "https://github.com/jaysyrk/Syrk-lytical",
-    highlight: false,
-  },
-  {
-    name: "ci-cd-pipeline",
-    tagline: "Automated CI/CD Pipeline",
-    description:
-      "CI/CD pipeline with containerized builds, automated tests, and zero-downtime deploys. Focuses on reliability and fast feedback, balancing automation with manual approval gates.",
-    tags: ["Python", "Docker", "GitHub Actions", "DevOps"],
-    href: "https://github.com/jaysyrk/ci-cd-pipeline",
-    highlight: false,
-  },
-  {
-    name: "system-health-dashboard",
-    tagline: "System Health Monitoring Dashboard",
-    description:
-      "Live server monitoring dashboard for CPU, memory, and process health. Uses WebSockets for real-time updates, trading persistent storage for instant visibility.",
-    tags: ["Python", "Flask", "psutil", "Monitoring"],
-    href: "https://github.com/jaysyrk/system-health-dashboard",
-    highlight: false,
-  },
-  {
-    name: "ordertrack-pro",
-    tagline: "Order & Invoice Management System",
-    description:
-      "Order and invoice system with inventory, customer management, and PDF generation. Balances ERP features with a simple, focused UI for small businesses.",
-    tags: ["Python", "Flask", "Chart.js", "PDF"],
-    href: "https://github.com/jaysyrk/ordertrack-pro",
-    highlight: false,
-  },
-  {
-    name: "helpdesk",
-    tagline: "IT Help Desk & Asset Manager",
-    description:
-      "ITSM platform for tickets, SLAs, and asset inventory. Emphasizes RBAC and escalation, trading feature breadth for reliability and clear workflows.",
-    tags: ["Python", "Flask", "ITSM", "RBAC"],
-    href: "https://github.com/jaysyrk/helpdesk",
-    highlight: false,
-  },
-  {
-    name: "budget-tracker",
-    tagline: "Personal Finance & Budget Tracker",
-    description:
-      "Finance dashboard for income, expenses, and trends. Focuses on clarity and automation, trading advanced analytics for a simple, actionable overview.",
-    tags: ["Python", "Flask", "Finance", "Data Viz"],
-    href: "https://github.com/jaysyrk/budget-tracker",
-    highlight: false,
-  },
 ];
 
 const skills = [
-  { category: "Languages", items: ["Python", "Rust", "Go", "C", "SQL"] },
-  { category: "Frontend", items: ["Next.js", "React", "Tailwind CSS", "Recharts"] },
-  { category: "Backend", items: ["Go", "FastAPI", "Flask", "BadgerDB", "PostgreSQL"] },
-  { category: "Infra / DevOps", items: ["Docker", "GitHub Actions", "CI/CD", "SQLite"] },
-  { category: "Product", items: ["Roadmapping", "Feature Flags", "Changelogs", "ITSM"] },
+  { category: "Languages", items: ["Python", "Rust", "Go", "TypeScript", "SQL"] },
+  { category: "Systems & Engines", items: ["L7 Edge Gateways", "Service Mesh", "Rule Engines / DSLs", "AST Parsing", "ML / Self-Healing"] },
+  { category: "Backend & Storage", items: ["Go", "Express", "FastAPI", "BadgerDB", "PostgreSQL"] },
+  { category: "DevOps & Cloud", items: ["Docker", "IaC Drift Detection", "Prometheus", "CI/CD", "GitHub Actions"] },
+  { category: "Frontend", items: ["Next.js", "React", "Tailwind CSS", "Vite"] },
 ];
 
 export default function Home() {
@@ -171,13 +108,15 @@ export default function Home() {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          {projects.map((project) => (
+          {projects.map((project, index) => (
             <a
               key={project.name}
               href={project.href}
               target="_blank"
               rel="noopener noreferrer"
               className={`group block rounded-xl border p-6 transition-all hover:-translate-y-0.5 hover:shadow-lg ${
+                index === 0 ? "md:col-span-2" : ""
+              } ${
                 project.highlight
                   ? "border-[#FFDAB9] bg-white hover:border-[#f0c49a] shadow-sm hover:shadow-[#FFDAB9]/60"
                   : "border-[#D8BFD8] bg-white hover:border-[#caaeca] hover:shadow-[#D8BFD8]/60"
