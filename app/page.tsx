@@ -31,7 +31,7 @@ const projects = [
     tagline: "Rule Engine DSL",
     description:
       "Logic engine and DSL that parses business rules into an AST for efficient, modular evaluation. Uses backward chaining for query resolution. Designed for readable syntax and easy integration, balancing user-friendly rules with reliable parsing.",
-    tags: ["DSL", "Compiler", "Python", "Architecture"],
+    tags: ["DSL", "Compiler", "Python", "Architecture", "Rust"],
     href: "https://github.com/jaysyrk/teleos",
     highlight: true,
   },
