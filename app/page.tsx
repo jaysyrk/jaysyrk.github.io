@@ -1,5 +1,14 @@
 const projects = [
   {
+    name: "Ousia",
+    tagline: "Dynamic L7 Edge Gateway & Service Mesh",
+    description:
+      "A high-performance, cloud-native Service Mesh and Edge Gateway written in Go. Features dynamic L7 routing, pluggable load balancing algorithms, transparent sidecar proxies, and built-in resiliency middleware (Circuit Breakers, Retries). Includes a centralized Control Plane and CLI.",
+    tags: ["Go", "Service Mesh", "Docker", "Prometheus", "Networking"],
+    href: "https://github.com/jaysyrk/Ousia",
+    highlight: true,
+  },
+  {
     name: "VektorStream",
     tagline: "High-Throughput Edge Vectorizer",
     description:
