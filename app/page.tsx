@@ -3,7 +3,7 @@ const projects = [
     name: "Ousia",
     tagline: "Dynamic L7 Edge Gateway & Service Mesh",
     description:
-      "A high-performance, cloud-native Service Mesh and Edge Gateway written in Go. Features dynamic L7 routing, pluggable load balancing algorithms, transparent sidecar proxies, and built-in resiliency middleware (Circuit Breakers, Retries). Includes a centralized Control Plane and CLI.",
+      "A high-performance Edge Gateway and Service Mesh in Go. It empowers small programs on lightweight servers to reliably handle the same massive traffic loads as giant enterprise systems by leveraging advanced load balancing, intelligent routing, and built-in resiliency.",
     tags: ["Go", "Service Mesh", "Docker", "Prometheus", "Networking"],
     href: "https://github.com/jaysyrk/Ousia",
     highlight: true,
