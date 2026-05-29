@@ -40,7 +40,7 @@ function AnimatedShape() {
     <Float speed={1.5} rotationIntensity={0.2} floatIntensity={0.5}>
       <Icosahedron ref={meshRef} args={[1.5, 1]} scale={1.8}>
         <meshBasicMaterial 
-          color="#fda4af" 
+          color="#e73737" 
           wireframe 
           transparent 
           opacity={0.3} 
@@ -50,7 +50,7 @@ function AnimatedShape() {
       {/* A second slightly smaller one for a complex nested wireframe look */}
       <Icosahedron args={[1.5, 1]} scale={1.4}>
         <meshBasicMaterial 
-          color="#d8b4fe" 
+          color="#c53030" 
           wireframe 
           transparent 
           opacity={0.2} 
