@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jacob McCord | Systems & Product Engineer",
-  description: "Portfolio of Jacob McCord, a software engineer specializing in low-level systems architecture, reverse proxies, networking gateways, and DSL compilers.",
+  title: "jaysyrk | Systems & Product Engineer",
+  description: "Portfolio of jaysyrk, a software engineer specializing in low-level systems architecture, reverse proxies, networking gateways, and DSL compilers.",
 };
 
 export default function RootLayout({

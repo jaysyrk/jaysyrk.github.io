@@ -68,7 +68,7 @@ export default function Home() {
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
           className="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed font-sans mb-12 tracking-wide"
         >
-          Hi, I&apos;m <span className="text-[#e73737] font-extrabold">Jacob McCord</span>, a 16-year-old software engineer building resilient backend infrastructure. I specialize in low-overhead edge networks, highly optimized custom rule compilers, and systems programming where microsecond benchmarks actually matter. While my core focus is hardcore backend systems, I enjoy exploring other domains here and there.
+          Hi, I&apos;m <span className="text-[#e73737] font-extrabold">jaysyrk</span>, a 16-year-old software engineer building resilient backend infrastructure. I specialize in low-overhead edge networks, highly optimized custom rule compilers, and systems programming where microsecond benchmarks actually matter. While my core focus is hardcore backend systems, I enjoy exploring other domains here and there.
         </motion.p>
 
         <motion.div 
@@ -334,7 +334,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-slate-200/50 px-6 py-12 relative z-10 max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-[10px] text-slate-500">
-        <p>© {new Date().getFullYear()} Jacob McCord. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} jaysyrk. All rights reserved.</p>
         <p>
           Built with{" "}
           <span className="text-[#e73737]">Next.js</span> +{" "}
