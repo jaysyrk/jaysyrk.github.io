@@ -47,7 +47,7 @@ export default function Home() {
           className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-slate-300 bg-slate-100/50 text-slate-700 font-mono text-[10px] uppercase tracking-widest mb-8"
         >
           <span className="w-1.5 h-1.5 rounded-full bg-[#e73737]" />
-          Systems & DSL Architecture
+          Software Engineer
         </motion.div>
         
         <motion.h1 
@@ -56,9 +56,9 @@ export default function Home() {
           transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
           className="text-5xl sm:text-7xl lg:text-[5rem] font-bold tracking-tighter mb-8 max-w-4xl leading-[1.05]"
         >
-          Building highly optimized <br />
+          Building tools, systems, <br />
           <span className="bg-gradient-to-r from-[#e73737] via-[#e73737] to-[#e73737] bg-clip-text text-transparent">
-            developer tools and systems.
+            and infrastructure.
           </span>
         </motion.h1>
 
@@ -68,7 +68,7 @@ export default function Home() {
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
           className="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed font-sans mb-12 tracking-wide"
         >
-          Hi, I&apos;m <span className="text-[#e73737] font-extrabold">jaysyrk</span>, a 16-year-old software engineer building resilient backend infrastructure. I specialize in low-overhead edge networks, highly optimized custom rule compilers, and systems programming where microsecond benchmarks actually matter. While my core focus is hardcore backend systems, I enjoy exploring other domains here and there.
+          Hi, I&apos;m <span className="text-[#e73737] font-extrabold">jaysyrk</span>, a 16-year-old developer interested in backend systems and infrastructure. I enjoy working on low-level programming, edge networks, and compilers, focusing on building fast and reliable tools. While I spend most of my time on backend projects, I also like exploring other areas of software engineering.
         </motion.p>
 
         <motion.div 
@@ -104,11 +104,10 @@ export default function Home() {
           className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4 border-b border-slate-200/50 pb-8"
         >
           <div>
-            <div className="font-mono text-xs text-[#e73737] uppercase tracking-widest mb-2">[01 // CORE_PROJECTS]</div>
-            <h2 className="text-3xl font-bold tracking-tight text-slate-800">Engineered Systems</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-slate-800">Projects</h2>
           </div>
           <p className="text-slate-600 text-sm max-w-md">
-            Production-grade developer tools focusing on high throughput, compiler correctness, and bare-metal resource conservation.
+            Projects focused on performance, compilers, and low-level systems.
           </p>
         </motion.div>
 
@@ -125,7 +124,7 @@ export default function Home() {
           >
             <div>
               <span className="font-mono text-[10px] text-[#e73737] bg-[#e73737]/10 border border-[#e73737]/20 px-2 py-0.5 rounded uppercase tracking-wider w-fit mb-4 block">
-                High Performance Edge
+                Edge Proxy
               </span>
 
               <h3 className="text-2xl font-bold text-slate-800 mb-2 font-sans flex items-center gap-3">
@@ -144,7 +143,7 @@ export default function Home() {
               <p className="text-xs font-mono text-[#e73737] mb-4 tracking-wide">Dynamic L7 Edge Gateway</p>
               
               <p className="text-slate-600 text-sm leading-relaxed mb-6 font-sans">
-                A high-performance reverse-proxy, API gateway, and lightweight service mesh built entirely in Go. Ousia empowers distributed programs operating on low-resource virtual private servers to safely handle massive load capacities through streamlined connection multiplexing and robust failover mechanics.
+                A lightweight reverse-proxy and API gateway written in Go. It's designed to help applications on small virtual private servers handle traffic more efficiently using connection multiplexing and basic failover features.
               </p>
             </div>
 
@@ -170,7 +169,7 @@ export default function Home() {
           >
             <div>
               <span className="font-mono text-[10px] text-[#e73737] bg-[#e73737]/10 border border-[#e73737]/20 px-2 py-0.5 rounded uppercase tracking-wider w-fit mb-4 block">
-                AST Parser Compiler
+                Rule Engine
               </span>
 
               <h3 className="text-2xl font-bold text-slate-800 mb-2 font-sans flex items-center gap-3">
@@ -189,7 +188,7 @@ export default function Home() {
               <p className="text-xs font-mono text-[#e73737] mb-4 tracking-wide">Rule Engine DSL</p>
               
               <p className="text-slate-600 text-sm leading-relaxed mb-6 font-sans">
-                A domain-specific language (DSL) and high-speed rule evaluation engine. It lexes and parses human-readable business logic directly into an Abstract Syntax Tree (AST) for bulletproof query resolution, providing massive throughput advantages over standard imperative rule loops.
+                A domain-specific language (DSL) and rule evaluation engine. It parses rules into an Abstract Syntax Tree (AST) to evaluate queries faster and more efficiently than standard loops.
               </p>
             </div>
 
@@ -217,10 +216,9 @@ export default function Home() {
           transition={{ duration: 0.6 }}
           className="flex flex-col justify-center items-center text-center mb-16"
         >
-          <div className="font-mono text-xs text-[#e73737] uppercase tracking-widest mb-2">[02 // CORE_CAPABILITIES]</div>
-          <h2 className="text-3xl font-bold tracking-tight text-slate-800 mb-4">Technical Capabilities</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-slate-800 mb-4">Skills</h2>
           <p className="text-slate-600 text-sm max-w-lg">
-            Strictly tailored skills matching low-level systems programming, networking architectures, compilers, and cloud scale operations.
+            Technologies and tools I use for systems programming, networking, and building infrastructure.
           </p>
         </motion.div>
 
@@ -234,8 +232,7 @@ export default function Home() {
           {/* Card 1: Core Languages */}
           <div className="p-6 rounded-2xl border border-slate-200/50 bg-white/50 backdrop-blur-sm hover:border-[#e73737]/20 transition-all duration-300 group">
             <div className="flex items-center gap-2 mb-4">
-              <span className="text-xs font-mono text-[#e73737]">[LGS]</span>
-              <h3 className="font-mono text-xs uppercase tracking-wider text-slate-800 font-bold">Core Languages</h3>
+              <h3 className="font-mono text-xs uppercase tracking-wider text-slate-800 font-bold">Languages</h3>
             </div>
             <ul className="space-y-2 text-sm text-slate-600 font-medium">
               <li className="flex justify-between items-center">
@@ -256,8 +253,7 @@ export default function Home() {
           {/* Card 2: Systems & Architecture */}
           <div className="p-6 rounded-2xl border border-slate-200/50 bg-white/50 backdrop-blur-sm hover:border-[#e73737]/20 transition-all duration-300 group">
             <div className="flex items-center gap-2 mb-4">
-              <span className="text-xs font-mono text-[#e73737]">[ARC]</span>
-              <h3 className="font-mono text-xs uppercase tracking-wider text-slate-800 font-bold">Architecture</h3>
+              <h3 className="font-mono text-xs uppercase tracking-wider text-slate-800 font-bold">Systems</h3>
             </div>
             <ul className="space-y-2 text-sm text-slate-600 font-medium">
               <li className="flex justify-between items-center">
@@ -278,8 +274,7 @@ export default function Home() {
           {/* Card 3: Ecosystem & Tools */}
           <div className="p-6 rounded-2xl border border-slate-200/50 bg-white/50 backdrop-blur-sm hover:border-slate-300 transition-all duration-300 group">
             <div className="flex items-center gap-2 mb-4">
-              <span className="text-xs font-mono text-slate-600">[TLS]</span>
-              <h3 className="font-mono text-xs uppercase tracking-wider text-slate-800 font-bold">Ecosystem</h3>
+              <h3 className="font-mono text-xs uppercase tracking-wider text-slate-800 font-bold">Tools</h3>
             </div>
             <ul className="space-y-2 text-sm text-slate-600 font-medium">
               <li className="flex justify-between items-center">
@@ -311,10 +306,9 @@ export default function Home() {
           <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[250px] h-[250px] rounded-full bg-[#e73737]/5 blur-[50px] pointer-events-none" />
 
           <div className="max-w-md">
-            <div className="font-mono text-xs text-[#e73737] uppercase tracking-widest mb-2">[03 // GET_IN_TOUCH]</div>
-            <h2 className="text-3xl font-bold tracking-tight text-slate-800 mb-4">Let&apos;s build together</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-slate-800 mb-4">Get in touch</h2>
             <p className="text-slate-600 text-sm leading-relaxed">
-              Always interested in open-source systems engineering, custom compiler pipelines, product strategy, or general deep tech conversations.
+              Always open to talking about open-source projects, systems engineering, or software development in general.
             </p>
           </div>
 
