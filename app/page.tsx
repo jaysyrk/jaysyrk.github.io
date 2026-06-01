@@ -21,14 +21,14 @@ export default function Home() {
           <span className="h-1.5 w-1.5 rounded-full bg-[#e73737] animate-pulse" />
         </div>
         <div className="flex gap-6 text-xs font-mono uppercase tracking-wider text-slate-600">
-          <a href="#projects" className="hover:text-[#e73737] transition-colors">Projects</a>
-          <a href="#skills" className="hover:text-[#e73737] transition-colors">Skills</a>
-          <a href="#contact" className="hover:text-[#e73737] transition-colors">Contact</a>
+          <a href="#projects" className="hover:text-[#e73737] transition-colors duration-300">Projects</a>
+          <a href="#skills" className="hover:text-[#e73737] transition-colors duration-300">Skills</a>
+          <a href="#contact" className="hover:text-[#e73737] transition-colors duration-300">Contact</a>
           <a
             href="https://github.com/jaysyrk"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#e73737] transition-colors flex items-center gap-1"
+            className="hover:text-[#e73737] transition-colors duration-300 flex items-center gap-1"
           >
             GitHub
             <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">

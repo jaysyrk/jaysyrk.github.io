@@ -43,7 +43,7 @@ function AnimatedShape() {
           color="#e73737" 
           wireframe 
           transparent 
-          opacity={0.3} 
+          opacity={0.1} 
         />
       </Icosahedron>
       
@@ -53,7 +53,7 @@ function AnimatedShape() {
           color="#c53030" 
           wireframe 
           transparent 
-          opacity={0.2} 
+          opacity={0.05} 
         />
       </Icosahedron>
     </Float>
