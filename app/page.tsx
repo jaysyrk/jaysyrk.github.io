@@ -40,7 +40,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="max-w-5xl mx-auto px-6 py-28 md:py-36 relative z-10">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
@@ -49,8 +49,8 @@ export default function Home() {
           <span className="w-1.5 h-1.5 rounded-full bg-[#e73737]" />
           Software Engineer
         </motion.div>
-        
-        <motion.h1 
+
+        <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
@@ -62,7 +62,7 @@ export default function Home() {
           </span>
         </motion.h1>
 
-        <motion.p 
+        <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
@@ -71,7 +71,7 @@ export default function Home() {
           Hi, I&apos;m <span className="text-[#e73737] font-extrabold">jaysyrk</span>, a 16-year-old developer interested in backend systems and infrastructure. I enjoy working on low-level programming, edge networks, and compilers, focusing on building fast and reliable tools. While I spend most of my time on backend projects, I also like exploring other areas of software engineering.
         </motion.p>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
@@ -96,7 +96,7 @@ export default function Home() {
 
       {/* Projects Showcase */}
       <section id="projects" className="max-w-5xl mx-auto px-6 py-24 relative z-10 scroll-mt-20">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -113,9 +113,9 @@ export default function Home() {
 
         {/* Simplified Showcase Rows */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          
+
           {/* PROJECT 1: OUSIA */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -141,7 +141,7 @@ export default function Home() {
                 </a>
               </h3>
               <p className="text-xs font-mono text-[#e73737] mb-4 tracking-wide">Dynamic L7 Edge Gateway</p>
-              
+
               <p className="text-slate-600 text-sm leading-relaxed mb-6 font-sans">
                 A lightweight reverse-proxy and API gateway written in Go. It's designed to help applications on small virtual private servers handle traffic more efficiently using connection multiplexing and basic failover features.
               </p>
@@ -160,7 +160,7 @@ export default function Home() {
           </motion.div>
 
           {/* PROJECT 2: TELEOS */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -186,7 +186,7 @@ export default function Home() {
                 </a>
               </h3>
               <p className="text-xs font-mono text-[#e73737] mb-4 tracking-wide">Rule Engine DSL</p>
-              
+
               <p className="text-slate-600 text-sm leading-relaxed mb-6 font-sans">
                 A domain-specific language (DSL) and rule evaluation engine. It parses rules into an Abstract Syntax Tree (AST) to evaluate queries faster and more efficiently than standard loops.
               </p>
@@ -205,7 +205,7 @@ export default function Home() {
           </motion.div>
 
           {/* PROJECT 3: TITANBOT */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -231,7 +231,7 @@ export default function Home() {
                 </a>
               </h3>
               <p className="text-xs font-mono text-[#e73737] mb-4 tracking-wide">Multi-Vector Engine</p>
-              
+
               <p className="text-slate-600 text-sm leading-relaxed mb-6 font-sans">
                 A high-performance load testing engine that bombards servers with HTTP, WebSockets, raw TCP, and UDP traffic simultaneously to test enterprise-level resilience.
               </p>
@@ -250,7 +250,7 @@ export default function Home() {
           </motion.div>
 
           {/* PROJECT 4: APEIRON */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -259,7 +259,7 @@ export default function Home() {
           >
             <div>
               <span className="font-mono text-[10px] text-[#e73737] bg-[#e73737]/10 border border-[#e73737]/20 px-2 py-0.5 rounded uppercase tracking-wider w-fit mb-4 block">
-                Local AI Companion
+                Local AI
               </span>
 
               <h3 className="text-2xl font-bold text-slate-800 mb-2 font-sans flex items-center gap-3">
@@ -276,7 +276,7 @@ export default function Home() {
                 </a>
               </h3>
               <p className="text-xs font-mono text-[#e73737] mb-4 tracking-wide">Offline RAG Architecture</p>
-              
+
               <p className="text-slate-600 text-sm leading-relaxed mb-6 font-sans">
                 A locally-hosted AI designed for deep dialogue about philosophy and psychology. Uses offline RAG integration to inject custom literature into the model's memory for 100% private, contextual conversations.
               </p>
@@ -294,12 +294,47 @@ export default function Home() {
             </div>
           </motion.div>
 
+          {/* PROJECT 5: CODESTUDIO */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, delay: 0.4 }}
+            className="flex flex-col justify-between p-6 rounded-2xl border border-slate-200/50 bg-white/50 backdrop-blur-sm hover:border-[#e73737]/20 transition-all duration-300"
+          >
+            <div>
+              <span className="font-mono text-[10px] text-[#e73737] bg-[#e73737]/10 border border-[#e73737]/20 px-2 py-0.5 rounded uppercase tracking-wider w-fit mb-4 block">
+                Browser IDE
+              </span>
+
+              <h3 className="text-2xl font-bold text-slate-800 mb-2 font-sans flex items-center gap-3">
+                CodeStudio
+              </h3>
+              <p className="text-xs font-mono text-[#e73737] mb-4 tracking-wide">Offline-First Environment</p>
+
+              <p className="text-slate-600 text-sm leading-relaxed mb-6 font-sans">
+                A lightweight, fully functional IDE that runs entirely in the browser. Conceived the core concept and developed the browser-based backend logic for local file management, live preview, and ZIP exports.
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-2 mt-auto">
+              {["JavaScript", "Browser APIs", "CodeMirror", "Virtual FS", "Offline First"].map((tag) => (
+                <span
+                  key={tag}
+                  className="text-[10px] font-mono bg-[#e73737]/5 text-[#e73737] border border-[#e73737]/10 px-2.5 py-1 rounded"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </motion.div>
+
         </div>
       </section>
 
       {/* Refined Technical Skills Matrix */}
       <section id="skills" className="max-w-5xl mx-auto px-6 py-28 relative z-10 scroll-mt-20">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -312,7 +347,7 @@ export default function Home() {
           </p>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -386,7 +421,7 @@ export default function Home() {
 
       {/* Modern Contact Section */}
       <section id="contact" className="max-w-5xl mx-auto px-6 py-28 relative z-10 scroll-mt-20">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: "-100px" }}
